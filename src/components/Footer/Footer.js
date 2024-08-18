@@ -36,7 +36,7 @@ function Footer() {
           <div className="flex flex-col">
             <h3 className="text-xl font-medium mb-4">About Us</h3>
             <ul className="space-y-2">
-              <li><Link to="/our-story" className="text-sm hover:underline">Our story</Link></li>
+              <li><Link to="/ourstory" className="text-sm hover:underline">Our story</Link></li>
             </ul>
           </div>
           <div className="flex flex-col items-center">

@@ -33,7 +33,7 @@ const Slideshow = () => {
 
   return (
     <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
-      <h2 className="text-2xl font-bold text-center mt-4 mb-2 absolute top-0 left-0 w-full py-4  from-black via-transparent to-transparent text-black py-[50px]">
+      <h2 className="text-2xl font-bold text-center mt-4 mb-2 absolute top-0 left-0 w-full py-4  from-black via-transparent to-transparent text-black mt-[50px]">
         Popular Purchases
       </h2>
       <img

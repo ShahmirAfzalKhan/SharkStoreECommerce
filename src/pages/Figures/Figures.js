@@ -78,12 +78,24 @@ function Figures() {
 
             <div className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
                 {filteredProducts.map(product => (
-                    <div key={product.id} className="border p-4 rounded shadow">
-                        <img src={product.image} alt={product.name} className="w-full h-40 object-cover mb-4" />
+                    <div
+                        key={product.id}
+                        className="border p-4 rounded shadow transition-transform duration-300 transform hover:scale-105 cursor-pointer"
+                        >
+                        <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-40 object-cover mb-4"
+                        />
                         <h3 className="text-lg font-semibold">{product.name}</h3>
                         <div className="flex justify-between items-center mt-2">
                             <span>{`RS ${product.price}`}</span>
-                            <button className="bg-black text-white px-3 py-1 rounded" onClick={() => handleAddToCart(product)}>🛒</button>
+                            <button
+                            className="bg-black text-white px-3 py-1 rounded cursor-pointer"
+                            onClick={() => handleAddToCart(product)}
+                            >
+                                🛒
+                            </button>
                         </div>
                     </div>
                 ))}
