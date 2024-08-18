@@ -45,11 +45,12 @@ function App() {
         <Route path="/order-confirmation/:orderId" element={<OrderConfirmation />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/ourstory" element={<OurStory />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/cookies" element={<Cookies />} />
         <Route path="/accessibility" element={<Accessibility />} />
-        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/reviews" element={<Reviews />} /> 
       </Routes>
       <Footer />
     </Router>

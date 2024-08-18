@@ -21,36 +21,37 @@ const Slideshow = () => {
   };
 
   const prevSlide = () => {
-    setCurrentImageIndex((prevIndex) => 
+    setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
-  // Automatic slide change every 3 seconds
   useEffect(() => {
     const intervalId = setInterval(nextSlide, 3000);
-    return () => clearInterval(intervalId); // Clear interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
-      <h2 className="text-2xl font-bold text-center mt-4 mb-2">Popular Purchases</h2>
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
+      <h2 className="text-2xl font-bold text-center mt-4 mb-2 absolute top-0 left-0 w-full py-4  from-black via-transparent to-transparent text-black py-[50px]">
+        Popular Purchases
+      </h2>
       <img
         src={images[currentImageIndex]}
         alt="Slideshow Image"
-        className="w-full h-full object-contain"
+        className="w-full h-full object-cover pt-[140px]"
       />
       <button
         onClick={prevSlide}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 text-black p-2  rounded-full"
       >
-        ⬅️
+        &#10094; 
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 text-black p-2  rounded-full"
       >
-        ➡️
+        &#10095; 
       </button>
     </div>
   );

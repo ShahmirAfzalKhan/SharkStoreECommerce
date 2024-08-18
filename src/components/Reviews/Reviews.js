@@ -24,12 +24,12 @@ function Reviews() {
   };
 
   return (
-    <section className="my-8">
-      <h2 className="text-4xl font-bold pl-8 md:pl-16">Brilliant</h2>
-      <h2 className="text-4xl font-bold text-orange-600 pl-8 md:pl-16">★★★★★</h2>
-      <p className="text-xl pl-8 md:pl-16">based on 11868 reviews</p>
+    <section className="my-8 text-center">
+      <h2 className="text-4xl font-bold pt-[100px]">Brilliant</h2>
+      <h2 className="text-4xl font-bold text-orange-600">★★★★★</h2>
+      <p className="text-xl">based on 11868 reviews</p>
 
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden mt-8">
         <div
           id="scrollContainer"
           className="flex overflow-x-auto scrollbar-hide"
